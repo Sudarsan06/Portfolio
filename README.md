@@ -76,10 +76,10 @@ I build real-world applications using Java, JavaScript, and modern web + AI tech
 ---
 
 ## 🔗 Connect With Me
-
-* 📧 Email: [sudarsanmahapatro63@gmail.com])
-* 💼 LinkedIn: *(Add your link here)*
-* 💻 GitHub: *(Add your link here)*
+* 🔗 Portfolio: https://sudarsanmahapatro.lovable.app/
+* 📧 Email: [sudarsanmahapatro63@gmail.com]
+* 💼 LinkedIn: www.linkedin.com/in/sudarsan-mahapatro-616352298
+* 💻 GitHub: https://github.com/Sudarsan06
 
 ---
 
