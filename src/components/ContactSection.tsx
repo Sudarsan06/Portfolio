@@ -48,7 +48,7 @@ const ContactSection = () => {
           <a href="https://github.com/Sudarsan06" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-md border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition">
             <Github className="w-5 h-5" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-md border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition">
+          <a href="https://www.linkedin.com/in/sudarsan-mahapatro-616352298" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-md border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition">
             <Linkedin className="w-5 h-5" />
           </a>
         </motion.div>
