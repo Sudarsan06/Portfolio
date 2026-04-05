@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "Java", level: 90 },
-  { name: "JavaScript", level: 85 },
-  { name: "Node.js", level: 75 },
-  { name: "HTML & CSS", level: 85 },
-  { name: "MongoDB", level: 70 },
+  { name: "HTML & CSS", level: 90 },
+  { name: "JavaScript", level: 70 },
   { name: "SQL", level: 75 },
-  { name: "Python", level: 70 },
+  { name: "MongoDB", level: 70 },
   { name: "Figma", level: 65 },
+  { name: "Node.js", level: 60 },
+  { name: "Python", level: 60 },
 ];
 
 const tools = ["Git & GitHub", "NPM", "MongoDB Compass", "Cisco Packet Tracer"];
