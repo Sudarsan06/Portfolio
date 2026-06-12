@@ -85,7 +85,30 @@ const ProjectsSection = () => {
                     <span className="font-display text-xs text-muted-foreground">{project.year}</span>
                   </div>
                 </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition opacity-0 group-hover:opacity-100" />
+                <div className="flex items-center gap-3">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-display text-muted-foreground hover:text-primary transition"
+                      aria-label={`${project.title} live demo`}
+                    >
+                      <ExternalLink className="w-4 h-4" /> Live
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-display text-muted-foreground hover:text-primary transition"
+                      aria-label={`${project.title} GitHub repository`}
+                    >
+                      <Github className="w-4 h-4" /> GitHub
+                    </a>
+                  )}
+                </div>
               </div>
 
               <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
