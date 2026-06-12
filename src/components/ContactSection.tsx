@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 px-6 bg-card/50">
+    <section id="contact" className="py-24 px-6 bg-secondary/30">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
