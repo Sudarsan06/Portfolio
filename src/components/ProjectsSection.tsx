@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Shield, Utensils, Github, GraduationCap } from "lucide-react";
 
-const projects = [
+type Project = {
+  title: string;
+  year: string;
+  icon: typeof Shield;
+  description: string;
+  highlights: string[];
+  tags: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+};
+
+const projects: Project[] = [
   {
     title: "ExamSphere — Online Examination Platform",
     year: "2026",
