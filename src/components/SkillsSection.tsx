@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 const skills = [
   { name: "Java", level: 90 },
   { name: "Spring Boot", level: 80 },
+  { name: "JavaScript", level: 70 },
   { name: "Spring MVC", level: 75 },
+  { name: "SQL", level: 75 },
+  { name: "Python", level: 60 },
   { name: "JPA / Hibernate", level: 75 },
   { name: "HTML & CSS", level: 90 },
-  { name: "JavaScript", level: 70 },
-  { name: "SQL", level: 75 },
   { name: "MongoDB", level: 70 },
   { name: "Node.js", level: 60 },
-  { name: "Python", level: 60 },
 ];
 
 const tools = ["Git & GitHub", "NPM", "Thymeleaf", "REST APIs", "MongoDB Compass", "Cisco Packet Tracer"];
