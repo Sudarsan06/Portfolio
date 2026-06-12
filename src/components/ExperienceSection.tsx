@@ -18,7 +18,7 @@ const ExperienceSection = () => {
         </motion.div>
 
         <div className="space-y-10">
-          {/* Experience */}
+          {/* Experience - Fluentgrid */}
           <motion.div
             className="relative pl-8 border-l-2 border-primary/30"
             initial={{ opacity: 0, x: -20 }}
@@ -29,11 +29,30 @@ const ExperienceSection = () => {
             <div className="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
               <Briefcase className="w-2.5 h-2.5 text-primary" />
             </div>
-            <span className="font-display text-xs text-primary">2025</span>
+            <span className="font-display text-xs text-primary">May 2026 – Present</span>
+            <h3 className="font-display text-lg font-bold text-foreground">Software Development Intern</h3>
+            <p className="text-sm text-muted-foreground mb-2">Fluentgrid Limited · Visakhapatnam</p>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Architected and deployed an enterprise-grade web app as the sole full-stack developer. Built role-based access control with stateful session management, and optimized SQL Server schemas via targeted query tuning and constraint handling.
+            </p>
+          </motion.div>
+
+          {/* Experience - CodeCrafters */}
+          <motion.div
+            className="relative pl-8 border-l-2 border-primary/30"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+          >
+            <div className="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+              <Briefcase className="w-2.5 h-2.5 text-primary" />
+            </div>
+            <span className="font-display text-xs text-primary">May 2025 – Jun 2025</span>
             <h3 className="font-display text-lg font-bold text-foreground">AIML Intern</h3>
             <p className="text-sm text-muted-foreground mb-2">CodeCrafters · Visakhapatnam</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Gained hands-on exposure to Python and applied core ML algorithms. Worked on models like YOLOv8, MTCNN, and DeepFace. Explored NumPy, Pandas, and scikit-learn for small-scale dataset analysis.
+              Deployed Scikit-Learn predictive models boosting accuracy by 12%. Built data preprocessing pipelines with NumPy/Pandas on 50k+ record datasets, and fused YOLOv8, MTCNN & DeepFace for real-time video spatial analytics.
             </p>
           </motion.div>
 
