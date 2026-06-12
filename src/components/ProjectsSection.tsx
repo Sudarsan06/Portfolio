@@ -1,7 +1,34 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Shield, Utensils } from "lucide-react";
+import { ExternalLink, Shield, Utensils, Github, GraduationCap } from "lucide-react";
 
-const projects = [
+type Project = {
+  title: string;
+  year: string;
+  icon: typeof Shield;
+  description: string;
+  highlights: string[];
+  tags: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+};
+
+const projects: Project[] = [
+  {
+    title: "ExamSphere — Online Examination Platform",
+    year: "2026",
+    icon: GraduationCap,
+    liveUrl: "https://examsphere-up4d.onrender.com",
+    githubUrl: "https://github.com/Sudarsan06/ExamSphere",
+    description:
+      "Full-stack online examination platform with 15+ core modules for authentication, exam management, question banks, result processing, and user administration.",
+    highlights: [
+      "Dual-factor OTP verification with BCrypt password hashing",
+      "RESTful backend modules for exam & question bank management",
+      "Automated score calculation and result processing",
+      "Deployed on Railway",
+    ],
+    tags: ["Spring Boot", "Java", "SQL Server", "JavaScript", "Thymeleaf"],
+  },
   {
     title: "AI Helmet Detection System",
     year: "2025",
@@ -10,11 +37,11 @@ const projects = [
       "Real-time safety monitoring system using YOLOv8 for helmet detection and MTCNN + DeepFace for face recognition. Designed for industrial safety gear compliance.",
     highlights: [
       "95% accuracy on test footage",
-      "Live CCTV stream support",
-      "Video processing pipeline for continuous monitoring",
-      "Alert generation system",
+      "Live RTSP / CCTV stream support",
+      "OpenCV video processing pipeline for continuous monitoring",
+      "Identifies individuals neglecting safety protocols",
     ],
-    tags: ["YOLOv8", "MTCNN", "DeepFace", "Python", "Computer Vision"],
+    tags: ["YOLOv8", "MTCNN", "DeepFace", "OpenCV", "Python"],
   },
   {
     title: "EatFit — Diet Planner",
@@ -69,7 +96,30 @@ const ProjectsSection = () => {
                     <span className="font-display text-xs text-muted-foreground">{project.year}</span>
                   </div>
                 </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition opacity-0 group-hover:opacity-100" />
+                <div className="flex items-center gap-3">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-display text-muted-foreground hover:text-primary transition"
+                      aria-label={`${project.title} live demo`}
+                    >
+                      <ExternalLink className="w-4 h-4" /> Live
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-display text-muted-foreground hover:text-primary transition"
+                      aria-label={`${project.title} GitHub repository`}
+                    >
+                      <Github className="w-4 h-4" /> GitHub
+                    </a>
+                  )}
+                </div>
               </div>
 
               <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
