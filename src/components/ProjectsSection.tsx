@@ -1,7 +1,23 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Shield, Utensils } from "lucide-react";
+import { ExternalLink, Shield, Utensils, Github, GraduationCap } from "lucide-react";
 
 const projects = [
+  {
+    title: "ExamSphere — Online Examination Platform",
+    year: "2026",
+    icon: GraduationCap,
+    liveUrl: "https://examsphere-up4d.onrender.com",
+    githubUrl: "https://github.com/Sudarsan06/ExamSphere",
+    description:
+      "Full-stack online examination platform with 15+ core modules for authentication, exam management, question banks, result processing, and user administration.",
+    highlights: [
+      "Dual-factor OTP verification with BCrypt password hashing",
+      "RESTful backend modules for exam & question bank management",
+      "Automated score calculation and result processing",
+      "Deployed on Railway",
+    ],
+    tags: ["Spring Boot", "Java", "SQL Server", "JavaScript", "Thymeleaf"],
+  },
   {
     title: "AI Helmet Detection System",
     year: "2025",
@@ -10,11 +26,11 @@ const projects = [
       "Real-time safety monitoring system using YOLOv8 for helmet detection and MTCNN + DeepFace for face recognition. Designed for industrial safety gear compliance.",
     highlights: [
       "95% accuracy on test footage",
-      "Live CCTV stream support",
-      "Video processing pipeline for continuous monitoring",
-      "Alert generation system",
+      "Live RTSP / CCTV stream support",
+      "OpenCV video processing pipeline for continuous monitoring",
+      "Identifies individuals neglecting safety protocols",
     ],
-    tags: ["YOLOv8", "MTCNN", "DeepFace", "Python", "Computer Vision"],
+    tags: ["YOLOv8", "MTCNN", "DeepFace", "OpenCV", "Python"],
   },
   {
     title: "EatFit — Diet Planner",
