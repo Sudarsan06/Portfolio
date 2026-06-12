@@ -60,7 +60,7 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-6 bg-card/50">
+    <section id="projects" className="py-24 px-6 bg-secondary/30">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ const ProjectsSection = () => {
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
-              className="border border-border rounded-lg p-6 md:p-8 bg-card hover:border-primary/30 transition group"
+              className="border border-border rounded-2xl p-6 md:p-8 bg-secondary/40 hover:border-primary/50 hover:bg-secondary/60 transition group"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -134,7 +134,7 @@ const ProjectsSection = () => {
 
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="text-xs font-display px-3 py-1 rounded-full bg-secondary text-secondary-foreground">
+                  <span key={tag} className="text-xs font-display px-3 py-1 rounded-full bg-background border border-border text-secondary-foreground">
                     {tag}
                   </span>
                 ))}
