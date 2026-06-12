@@ -70,7 +70,7 @@ const ExperienceSection = () => {
             <span className="font-display text-xs text-muted-foreground">2023 – 2027</span>
             <h3 className="font-display text-lg font-bold text-foreground">B.Tech CSE (AI & ML)</h3>
             <p className="text-sm text-muted-foreground mb-1">Anil Neerukonda Institute of Technology and Sciences</p>
-            <p className="text-sm text-primary font-display">CGPA: 9.07</p>
+            <p className="text-sm text-primary font-display">CGPA: 9.09</p>
           </motion.div>
 
           <motion.div
