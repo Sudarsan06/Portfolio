@@ -67,7 +67,7 @@ const HeroSection = () => {
             <Github className="w-4 h-4" /> GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/sudarsan-mahapatro-616352298"
+            href="https://www.linkedin.com/in/sudarsan-mahapatro"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-border text-foreground font-display text-sm px-6 py-3 rounded-md hover:border-primary/50 hover:text-primary transition"
